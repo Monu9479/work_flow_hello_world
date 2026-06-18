@@ -8,8 +8,10 @@ on:
       - main
       
 jobs:
-  print:
+  deploy:
     runs-on: ubuntu-latest
     steps:
+      - name: checkout
+        uses: actions/checkout@v4
       - name: print message
         run: echo "Deploying app…"
