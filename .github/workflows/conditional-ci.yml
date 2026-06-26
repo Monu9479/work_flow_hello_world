@@ -3,9 +3,9 @@ name: CI Pipeline
 on:
   workflow_dispatch: 
     inputs:
-      environment: ["dev"."UAT"]
+      environment:
         description: "Deployment environment"
-        required: false
+        required: true
         default: true
       version:
         description: "Application version"
