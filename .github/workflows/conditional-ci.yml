@@ -1,9 +1,9 @@
-name: manual-workflow.yml
+name: CI Pipeline
 
 on:
   workflow_dispatch: 
     inputs:
-      environment:
+      environment: ["dev"."UAT"]
         description: "Deployment environment"
         required: false
         default: true
